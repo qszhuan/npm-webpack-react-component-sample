@@ -52,7 +52,9 @@ var Hello =
 	module.exports = React.createClass({
 	    displayName: 'HelloMessage',
 	    render: function(){
-	        return React.createElement("div", {className: "hello"}, "Hello React")
+	        return React.createElement("div", {className: "hello"}, "(Hello React.", 
+	        this.props.children, ")"
+	        )
 	    }
 	})
 

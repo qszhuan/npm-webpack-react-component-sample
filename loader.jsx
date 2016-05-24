@@ -1,7 +1,9 @@
-var HelloMessage = require('./test/dist/hello-2');
+var HelloMessage = require('./test/dist/hello');
 require('./loader.less');
 
  ReactDOM.render(
-        <HelloMessage />,
+        <HelloMessage >
+        <div>this is from loader</div>
+        </HelloMessage>,
         document.getElementById('content')
       );
