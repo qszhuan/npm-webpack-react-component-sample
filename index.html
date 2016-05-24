@@ -4,7 +4,7 @@
         <title>Component Container</title>
          <script src="./node_modules/react/dist/react.js"></script>
         <script src="./node_modules/react-dom/dist/react-dom.js"></script>
-        <script src="./test/dist/hello.js"></script>
+        <script src="./test/lib/hello.3.1.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     </head>
     <body>
@@ -15,22 +15,15 @@
          <div id="content">
             This is the container.
         </div>
-        <script type="text/babel">
-        var HelloMessage = Hello;
-        
-        ReactDOM.render(
-            <HelloMessage />,
-            document.getElementById('testlib')
-        );
-        
-        ReactDOM.render(
-            <h1>Hello, world!</h1>,
-            document.getElementById('example')
-        );
-        
+        <script type="text/javascript">
+            ReactDOM.render(
+                React.createElement(Hello),
+                document.getElementById('testlib')
+            );
         </script>
        
         <script src="./dist/loader.js"></script>
+        <script src="./dist/style.css"></script>
         
     </body>
 </html>

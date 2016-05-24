@@ -1,8 +1,10 @@
 'use strict'
 var React = require('react')
+require('./hello.less');
+
 module.exports = React.createClass({
     displayName: 'HelloMessage',
     render: function(){
-        return <div>Hello React 3.0 lib</div>
+        return <div className="hello">Hello React</div>
     }
 })

@@ -9,7 +9,8 @@
   "author": "Qingshan Zhuan",
   "license": "ISC",
   "devDependencies": {
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

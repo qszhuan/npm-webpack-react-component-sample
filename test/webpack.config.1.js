@@ -3,16 +3,15 @@ var path = require('path');
 var config = require('./package.json');
 console.log(config.version);
 
-var BUILD_DIR = path.resolve(__dirname, 'lib');
+var BUILD_DIR = path.resolve(__dirname, 'dist');
 var APP_DIR = path.resolve(__dirname, '.');
 
 var config = {
   entry: APP_DIR + '/hello.jsx',
   output: {
     path: BUILD_DIR,
-    filename: 'hello.' +  config.version + '.js',
-    libraryTarget:'var',
-    library: "Hello"
+    filename: 'hello.js',
+    libraryTarget: "commonjs2"
   },
   module : {
      loaders: [
