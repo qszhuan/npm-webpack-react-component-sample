@@ -1,5 +1,4 @@
-var HelloMessage = require('./test/dist/hello');
-require('./loader.less');
+var HelloMessage = require('./hello/hello.jsx');
 
  ReactDOM.render(
         <HelloMessage >
